@@ -6,7 +6,7 @@
 
 # Google OAuth Proxy
 authproxy:
-  build: .
+  build: ../..
   ports:
     - "80:4180"
   links:
@@ -24,4 +24,4 @@ upstream:
   ports:
     - "8080:80"
   volumes:
-    - "./demo:/usr/share/nginx/html:ro"
+    - "../demo:/usr/share/nginx/html:ro"
